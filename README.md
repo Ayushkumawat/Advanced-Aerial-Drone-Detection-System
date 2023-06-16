@@ -26,7 +26,7 @@ Define and adjust the detection area using an interactive rectangle for accurate
 Instant detection and warning messages provide immediate responses to potential drone threats.
 
 5. Open-source and Extendable
-Access the open-source codebase for customization and integration into existing security systems.
+You can access the open-source codebase for customization and integration into existing security systems.
 
 6. Scalable and Cost-effective
 Efficient utilization of resources with a balance of accuracy and performance, resulting in cost savings.
@@ -69,8 +69,8 @@ The availability of this diverse and well-annotated dataset enables the Drone De
 
 ## Usage
 
-1. Run the `drone_DD.py` script:
-   - python drone_DD.py
+1. Run the `Advanced_Drone_Detection.py` script:
+   - python Advanced_Drone_Detection.py
 
 2. The script will open a live video feed from the default camera.
    - To create a rectangle, click and drag the mouse on the video feed to define the four corners of the rectangle.
