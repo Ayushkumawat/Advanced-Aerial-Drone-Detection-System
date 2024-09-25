@@ -43,6 +43,8 @@ The dataset was prepared using the Roboflow platform and exported through its AP
 
 The availability of this diverse and well-annotated dataset enables the Drone Detection model to learn from a wide range of drone images, resulting in improved accuracy and reliability in real-world detection scenarios.
 
+The dataset used in this project can be downloaded from [here.](https://universe.roboflow.com/drone-detection-ehdcs/drone-dataset-by-ayushkumawat)
+
 ## Requirements
 
 - Python 3.x
