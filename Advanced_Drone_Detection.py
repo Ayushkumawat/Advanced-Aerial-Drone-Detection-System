@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 
 # Load YOLOv5 model
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='C:/Users/ayuku/Downloads/best.pt', source='github')
+model = torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt', source='github')
 
 # Set video source (webcam or video file)
 cap = cv2.VideoCapture(0)
