@@ -6,11 +6,34 @@ This project demonstrates real-time drone detection using YOLOv5 and OpenCV. It 
 
 ## Features
 
-- Real-time drone detection using YOLOv5
-- Interactive rectangle creation and adjustment
-- Warning message displayed when a drone is detected inside or near the rectangle
+- Real-time drone detection using YOLOv5 with detection coordinates and confidence percentage.
+- No Code: Interactive and dynamic detection boundary creation and adjustment.
+- A warning message is displayed when a drone is detected inside or near the set boundary.
 
-![df002233-cd13-44c0-b5f8-51623015146f](https://github.com/Ayushkumawat/Advanced-Aerial-Drone-Detection-System/assets/76219349/53c582dc-8a31-47a6-bf81-71bf8e7409f0)
+![1](https://github.com/user-attachments/assets/d74354c7-fe39-4c8e-9e4d-39a9ddec0c45)
+
+## Installation
+
+1. Clone the repository:
+```
+   - git clone https://github.com/Ayushkumawat/Advanced-Aerial-Drone-Detection-System
+```
+2. Inside your project directory, create a virtual environment
+```
+   - python -m venv venv
+```
+3. Activate the virtual environment
+```
+   - .\venv\Scripts\activate       
+```
+2. Install the required Python libraries:
+```
+   - pip install -m requirements.txt
+```
+3. Run the script:
+```
+   - python Advanced_Drone_Detection.py
+```
 
 ## Benefits
 1. Enhanced Security
@@ -31,11 +54,9 @@ You can access the open-source codebase for customization and integration into e
 6. Scalable and Cost-effective
 Efficient utilization of resources with a balance of accuracy and performance, resulting in cost savings.
 
-![3c146082-7f6b-4c0c-8cc2-ad7728771c87](https://github.com/Ayushkumawat/Advanced-Aerial-Drone-Detection-System/assets/76219349/31d8ac4e-1753-44be-91b5-c801473fce93)
-
-![d22ec15f-7f61-4053-b7cd-7402ece65116](https://github.com/Ayushkumawat/Advanced-Aerial-Drone-Detection-System/assets/76219349/85b413e1-67cd-4b89-bde7-70e6fe6ec8f5)
-
 ## About the Dataset
+
+![WhatsApp Image 2023-12-02 at 12 17 17 AM](https://github.com/user-attachments/assets/73397d90-b350-4b27-901d-8c902257df80)
 
 The Drone Detection model was trained on a diverse dataset consisting of 1400 images of different types of drones. The dataset was carefully curated and labeled to ensure accurate annotations. It covers a wide range of drone variations, sizes, orientations, and backgrounds.
 
@@ -45,41 +66,19 @@ The availability of this diverse and well-annotated dataset enables the Drone De
 
 The dataset used in this project can be downloaded from [here.](https://universe.roboflow.com/drone-detection-ehdcs/drone-dataset-by-ayushkumawat)
 
-## Requirements
+![df002233-cd13-44c0-b5f8-51623015146f](https://github.com/Ayushkumawat/Advanced-Aerial-Drone-Detection-System/assets/76219349/53c582dc-8a31-47a6-bf81-71bf8e7409f0)
 
-- Python 3.x
-- OpenCV
-- PyTorch
-- YOLOv5
-- Numpy
-- PIL
+![3c146082-7f6b-4c0c-8cc2-ad7728771c87](https://github.com/Ayushkumawat/Advanced-Aerial-Drone-Detection-System/assets/76219349/31d8ac4e-1753-44be-91b5-c801473fce93)
 
-## Installation
-
-1. Clone the repository:
-
-   - git clone https://github.com/Ayushkumawat/Advanced-Aerial-Drone-Detection-System
-
-2. Install the required Python libraries:
-
-   - pip install opencv-python torch numpy pillow
-
-3. Download the YOLOv5 model:
-
-   - Visit the official YOLOv5 repository: [https://github.com/ultralytics/yolov5](https://github.com/ultralytics/yolov5)
-   - Download the desired pre-trained model weights (e.g., `best.pt`) and place them in the project directory.
+![d22ec15f-7f61-4053-b7cd-7402ece65116](https://github.com/Ayushkumawat/Advanced-Aerial-Drone-Detection-System/assets/76219349/85b413e1-67cd-4b89-bde7-70e6fe6ec8f5)
 
 ## Usage
 
-1. Run the `Advanced_Drone_Detection.py` script:
-   - python Advanced_Drone_Detection.py
-
-2. The script will open a live video feed from the default camera.
+The script will open a live video feed from the default camera.
    - To create a rectangle, click and drag the mouse on the video feed to define the four corners of the rectangle.
    - The rectangle can be adjusted by dragging the corners.
    - A warning message will be displayed whenever a drone is detected inside or near the rectangle.
-
-3. Press 'q' to quit the program.
+   - Press 'q' to quit the program.
 
 ## Customization
 
