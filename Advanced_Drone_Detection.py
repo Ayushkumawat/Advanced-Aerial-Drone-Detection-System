@@ -45,7 +45,16 @@ while True:
     ret, frame = cap.read()
 
     # Convert the frame to a format that YOLOv5 can process
-    img = Image.fromarray(frame[...,::-1])
+    try:
+        img = Image.fromarray(frame[...,::-1])
+    except Exception as e:
+        print("No camera Device Found, switching to drone.mp4", flush=True)
+        cap = cv2.VideoCapture('drone.mp4')
+        ret, frame = cap.read()
+        if not ret:
+            print("Failed to read drone.mp4", flush=True)
+            break
+        img = Image.fromarray(frame[...,::-1])
 
     # Run inference on the frame
     results = model(img, size=640)
