@@ -1,4 +1,8 @@
 opencv-python
 torch
 numpy
+ultralytics
+pandas
+tqdm
+seaborn
 pillow
